@@ -10,8 +10,8 @@ class Program
         while (running)
         {
             string comand = Console.ReadLine();
-            ConsoleComandExecute(comand);
             Console.WriteLine(manager.ExecuteComand(comand));
+            ConsoleComandExecute(comand);
         }
     }
     static void ConsoleComandExecute(string comandName)
